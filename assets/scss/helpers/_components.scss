@@ -1,0 +1,57 @@
+//title
+.title{	
+    &:before{
+        content: "";
+        position: absolute;
+        width: 8px;
+        background: $primary-color;
+        height: 72px;
+        left:-16px;
+
+        @include mobile(){
+            height: 36px;
+        }
+    }
+}
+
+//btn  
+.btn{
+    background: $primary-color;
+    color: $white;    
+    font-size: $font-size-3;
+    text-align: center;
+    &-s{
+        width: 104px;
+        padding: 6px 0;
+        font-weight: 500;
+    }
+    &-l{
+        width: 416px;
+        font-weight: bold;
+        padding: 12px 0;
+        
+        @include mobile(){
+            width: 100%;
+        }
+    }
+    &-b{
+        background: $black;
+        padding: 16px 0;
+        width: 100%;
+    }
+}
+
+//放大動畫
+.blow-up{
+    transform: scale(1, 1);
+    transition: all 0.5s ease-out;
+}
+.blow-up-l:hover{
+    transform: scale(1.2);
+}
+.blow-up-m:hover{
+    transform: scale(1.1);
+}
+.blow-up-s:hover{
+    transform: scale(1.05);
+}

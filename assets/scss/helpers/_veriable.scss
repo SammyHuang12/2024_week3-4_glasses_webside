@@ -1,0 +1,79 @@
+//width
+$container: 1296px;
+$pad: 696px;
+$mobile: 348px;
+
+//color
+$primary-color:#AA0601;
+$primary-dark:#650300;
+$secondary-color:#fbf2f2;
+$white: #ffffff;
+$gray:#DEE2E6;
+$gray-400:#CED4DA;
+$gray-dark:#707070;
+
+$black-light:#00000020;
+$black: #000000;
+
+$color:(
+    primary    : $primary-color,
+    primary-d  : $primary-dark,
+    secondary  : $secondary-color,
+    white      : $white,
+    gray       : $gray,
+    gray-400   :$gray-400,
+    gray-dark  : $gray-dark,    
+    black-light: $black-light,
+    black      : $black
+);
+
+//fz
+$font-size-base: 16px;
+$font-size-1: 14px;
+$font-size-2: $font-size-base;
+$font-size-3: $font-size-base * 1.25;   //20
+$font-size-4: $font-size-base * 1.5;    //24
+
+$font-size-5: $font-size-base * 2;      //32
+$font-size-6: $font-size-base * 2.25;   //36
+$font-size-7: $font-size-base * 3;      //48
+$font-size-8: $font-size-base * 4;      //64
+
+$font-size:(
+    1: $font-size-1,
+    2: $font-size-2,
+    3: $font-size-3,                    //20
+    4: $font-size-4,                    //24
+    5: $font-size-5,                    //32
+    6: $font-size-6,                    //36
+    7: $font-size-7,                    //48
+    8: $font-size-8                     //64
+);
+    
+//space
+$space   : 8px;                         //8
+$space-0 : $space * .5;                 //4
+$space-1 : $space * 1;                  //8
+$space-2 : $space * 2;                  //16
+$space-3 : $space * 3;                  //24
+$space-4 : $space * 4;
+$space-5 : $space * 5;
+$space-6 : $space * 6;
+$space-8 : $space * 8;
+$space-9 : $space * 9;
+$space-10: $space * 10;
+$space-12: $space * 12;
+
+$space:(
+    0 : $space-0,
+    1 : $space-1,
+    2 : $space-2,
+    3 : $space-3,
+    4 : $space-4,
+    5 : $space-5,
+    6 : $space-6,
+    8 : $space-8,
+    9 : $space-9,
+    10: $space-10,
+    12: $space-12
+)

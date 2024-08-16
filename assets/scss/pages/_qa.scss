@@ -1,0 +1,7 @@
+.qa{
+	max-width: 856px;
+	
+	@include mobile(){
+		margin-top: 180px;
+	}
+}

@@ -1,0 +1,369 @@
+//padding
+@each $key, $value in $space {
+    .px-#{"" + $key} {
+        padding-right: $value;
+        padding-left: $value;
+    }
+    .py-#{"" + $key} {
+        padding-top: $value;
+        padding-bottom: $value;
+    }
+    .pt-#{"" + $key} {
+        padding-top: $value;
+    }
+    .pb-#{"" + $key} { 
+        padding-bottom: $value;
+    }
+    .ps-#{"" + $key} {
+        padding-left: $value;
+    }
+    .pe-#{"" + $key} {
+        padding-right: $value;
+    }
+}
+
+@include pad(){
+    @each $key, $value in $space {   
+        .px-md-#{"" + $key} {
+            padding-right: $value;
+            padding-left: $value;
+        }
+        .py-md-#{"" + $key} {
+            padding-top: $value;
+            padding-bottom: $value;
+        }
+        .pt-md-#{"" + $key} {
+            padding-top: $value;
+        }
+        .pb-md-#{"" + $key} { 
+            padding-bottom: $value;
+        }
+        .ps-md-#{"" + $key} {
+            padding-left: $value;
+        }
+        .pe-md-#{"" + $key} {
+            padding-right: $value;
+        } 
+    }    
+}
+
+@include mobile(){
+    @each $key, $value in $space {    
+        .px-sm-#{"" + $key} {
+            padding-right: $value;
+            padding-left: $value;
+        }
+        .py-sm-#{"" + $key} {
+            padding-top: $value;
+            padding-bottom: $value;
+        }
+        .pt-sm-#{"" + $key} {
+            padding-top: $value;
+        }
+        .pb-sm-#{"" + $key} { 
+            padding-bottom: $value;
+        }
+        .ps-sm-#{"" + $key} {
+            padding-left: $value;
+        }
+        .pe-sm-#{"" + $key} {
+            padding-right: $value;
+        } 
+    }    
+}
+
+//margin
+@each $key, $value in $space {
+    .mx-#{"" + $key} {
+        margin: 0 $value;
+    }
+    .my-#{"" + $key} {
+        margin: $value 0;
+    }
+    .mt-#{"" + $key} {
+        margin-top: $value;
+    }
+    .mb-#{"" + $key} { 
+        margin-bottom: $value;
+    }
+    .ms-#{"" + $key} {
+        margin-left: $value;
+    }
+    .me-#{"" + $key} {
+        margin-right: $value;
+    }
+}
+
+@include pad(){
+    @each $key, $value in $space {
+        .mx-md-#{"" + $key} {
+            margin: 0 $value;
+        }
+        .my-md-#{"" + $key} {
+            margin: $value 0;
+        }
+        .mt-md-#{"" + $key} {
+            margin-top: $value;
+        }
+        .mb-md-#{"" + $key} { 
+            margin-bottom: $value;
+        }
+        .ms-md-#{"" + $key} {
+            margin-left: $value;
+        }
+        .me-md-#{"" + $key} {
+            margin-right: $value;
+        }
+    }
+    .mx-md-auto{
+        margin-left: auto; 
+        margin-right:auto;
+    }
+    
+    .ms-md-auto{
+        margin-left: auto;
+    }
+    
+    .me-md-auto{
+        margin-right: auto;
+    }
+}
+
+@include mobile(){
+    @each $key, $value in $space {
+        .mx-sm-#{"" + $key} {
+            margin: 0 $value;
+        }
+        .my-sm-#{"" + $key} {
+            margin: $value 0;
+        }
+        .mt-sm-#{"" + $key} {
+            margin-top: $value;
+        }
+        .mb-sm-#{"" + $key} { 
+            margin-bottom: $value;
+        }
+        .ms-sm-#{"" + $key} {
+            margin-left: $value;
+        }
+        .me-sm-#{"" + $key} {
+            margin-right: $value;
+        }
+    }
+
+    .mx-sm-auto{
+        margin-left: auto;
+        margin-right:auto;
+    }
+    
+    .ms-sm-auto{
+        margin-left: auto;
+    }
+    
+    .me-sm-auto{
+        margin-right: auto;
+    }
+}
+
+.mx-auto{
+    margin-left: auto;
+    margin-right:auto;
+}
+
+.ms-auto{
+    margin-left: auto;
+}
+
+.me-auto{
+    margin-right: auto;
+}
+
+.mt-auto{
+    margin-top: auto;
+}
+
+.mb-auto{
+    margin-bottom: auto;
+}
+
+//d-flex
+.d-flex{
+    display:flex;
+}
+
+.flex-wrap{
+    flex-wrap: wrap; 
+}
+
+.flex-row{
+    flex-direction: row;
+}
+
+.flex-column{
+    flex-direction: column;
+}
+
+.justify{    
+    &-start{
+        justify-content: flex-start;
+    }
+    &-center{
+        justify-content: center;   
+    }
+    &-between{
+        justify-content: space-between;
+    }
+    &-end{
+        justify-content: end;
+    }
+}
+
+.align-items-start{
+    align-items: start;
+}			
+
+.align-items-center{
+    align-items: center;
+}
+
+@include pad(){
+    .flex-md{
+        &-column{
+            flex-direction: column;
+        }
+        &-row{
+            flex-direction: row;
+        }
+    }
+    
+
+    .justify-md{    
+        &-start{
+            justify-content: flex-start;
+        }
+        &-center{
+            justify-content: center;   
+        }
+        &-between{
+            justify-content: space-between;
+        }
+        &-end{
+            justify-content: end;
+        }
+    }
+}
+
+@include mobile(){
+    .flex-sm{
+        &-column{
+            flex-direction: column;
+        }
+        &-row{
+            flex-direction: row;
+        }
+    }
+    .justify-sm{    
+        &-start{
+            justify-content: flex-start;
+        }
+        &-center{
+            justify-content: center;   
+        }
+        &-between{
+            justify-content: space-between;
+        }
+        &-end{
+            justify-content: end;
+        }
+    }
+}
+
+
+
+//font-size
+@each $key, $value in $font-size {
+    .fz-#{"" + $key} {
+        font-size: $value;
+    }
+}
+
+@include pad(){
+    @each $key, $value in $font-size {
+        .fz-md-#{"" + $key} {
+            font-size: $value;
+        }
+    }
+}
+
+@include mobile(){
+    @each $key, $value in $font-size {
+        .fz-sm-#{"" + $key} {
+            font-size: $value;
+        }  
+    }
+}
+
+.fw-bold{
+    font-weight: bold;
+}
+
+.fw-500{
+    font-weight: 500;
+}
+.fs-italic{
+    font-style: italic;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.word-break{
+    word-break:break-all;
+}
+
+//text-color
+@each $key, $value in $color {
+    .text-#{"" + $key} {
+        color: $value;
+    }
+}
+
+//bg-color
+@each $key, $value in $color {
+    .bg-#{"" + $key} {
+        background: $value;
+    }
+}
+
+.relative{
+    position: relative;
+}
+
+.absolute{
+    position: absolute;
+}
+
+.fixed{
+    position: fixed;
+}
+
+.h-full{
+    height: 100%;
+}
+
+.w{
+    &-full{
+        width: 100%;
+    }
+    @include pad(){
+        &-md-full{
+            width: 100%;
+        }      
+    }
+    @include mobile(){
+        &-sm-full{
+            width: 100%;
+        } 
+    }
+}

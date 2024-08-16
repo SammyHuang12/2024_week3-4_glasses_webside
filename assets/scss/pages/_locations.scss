@@ -1,0 +1,53 @@
+.location{
+	.city{
+		font-size: 18px;
+		padding: 6px 12px;
+		width: 304px;
+		border:1px solid $gray-400;	
+		
+		@include mobile(){
+			max-width: 276px;
+			width: 100%;	
+		}
+	}	
+	@include mobile(){
+		margin-top: 180px;		
+	}
+
+	.card-row{
+		margin: 0 -12px;
+	}
+
+	.column{
+		width: calc(100% / 3);
+		padding:0 12px;  //gutter,每個卡片的間距
+
+		@include pad(){
+			width: 50%;
+			max-width: 550px;
+		}
+
+		@include mobile(){
+			width: 100%;			
+		}
+
+		.card{  
+			// outline: 1px solid greenyellow;
+			height: 100%;  //使卡片一樣高
+			
+			.store{
+				border: 1px solid $black-light;
+				& +*{
+					border-right: 1px solid $black-light;
+					border-left: 1px solid $black-light;
+				}
+			}
+			.button{
+				overflow: hidden;
+				border: 1px solid $black-light;
+			}
+
+		
+		}
+	}
+}

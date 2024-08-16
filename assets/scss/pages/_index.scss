@@ -1,0 +1,186 @@
+.banner{
+	.slogan {
+		color: $primary-dark;
+		text-align: end;
+		@include y-center;
+
+		&-btn{
+			overflow: hidden;
+			width: 104px;
+			margin-left: auto;
+		}
+
+		.btn:hover{
+			background: $primary-dark;
+		}
+	}
+
+	@include mobile(){
+		margin-top: 180px;
+	}
+}
+
+.feature{
+	background: $secondary-color;
+	
+	.card-row{
+		margin: 0 -12px;
+	}
+
+	.column{
+		width: 25%;
+		padding:0 12px;  //gutter,每個卡片的間距
+
+		@include pad(){
+			width: 50%;
+			max-width: 550px;
+		}
+
+		@include mobile(){
+			width: 100%;
+		}
+
+		.card{  
+			// outline: 1px solid greenyellow;
+			height: 100%;  //使卡片一樣高	
+			img{
+				width: 100px;
+			}
+		}
+	}
+}	
+
+.classic{
+	.card-row{
+		margin: 0 -12px;
+	}
+
+	.column{
+		width: calc(100% / 3);
+		padding:0 12px;  //gutter,每個卡片的間距
+
+		@include pad(){
+			width: 100%;
+			max-width: 336px;
+			padding: 0;
+		}
+
+		@include mobile(){
+			max-width: 372px;
+			padding:0 12px;	
+		}
+
+		.card{  
+			// outline: 1px solid greenyellow;
+			height: 100%;  //使卡片一樣高
+			word-break: break-all;
+		}
+	}
+}
+
+.design{	
+	&-pic{
+		top:0;
+		z-index: -1;
+		height: 100%;
+		width: 100%;
+	}
+
+	.card-row{
+		margin: 0 -12px;
+		padding:0 12px;
+		@include mobile(){
+			padding:0;
+		}
+	}
+
+	.column{
+		width: 50%;
+
+		@include pad(){
+			width: 100%;
+		}
+
+		@include mobile(){
+			max-width: 372px;
+			padding:0 12px;	
+		}
+
+		.card{  
+			// outline: 1px solid greenyellow;
+			height: 100%;  //使卡片一樣高
+			word-break: break-all;
+		}
+	}
+}
+
+.recommender{
+	.card-row{
+		margin: 0 -12px;
+	}
+
+	.column{
+		width: 25%;
+		padding:0 12px;  //gutter,每個卡片的間距
+
+		@include pad(){
+			width: 50%;
+			max-width: 550px;
+		}
+
+		@include mobile(){
+			width: 100%;
+		}
+
+		.card{  
+			border:1px solid $gray;
+			border-radius: 4px;
+			box-shadow: 0px 2px 6px #00000029;		
+		}
+	}
+}
+
+.contactUs{
+	background: $secondary-color;
+	
+	&-info{
+		max-width: 636px;
+		// outline:1px solid yellowgreen;		
+	}
+	
+	.button{
+		overflow: hidden;
+		max-width: 416px;
+
+		& .btn:hover{
+			background: $primary-dark;
+		}
+	}
+	
+	.form-info {
+		label{
+			margin-bottom: $space-1;
+			
+		}
+		&:last-child label{
+				margin-bottom: 0;
+			}
+
+		input{
+			padding:6px 12px;
+			background: $secondary-color;
+			border: 1px solid $black;
+			
+		}
+		::placeholder{
+			opacity: 0.2;
+		}
+
+		textarea{
+			background: $secondary-color;
+			border: 1px solid $black;
+			min-height: 136px;
+			 resize: none;
+		}
+	}
+}

@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>首頁 | Glasses</title>
+</head>
+<body>
+	<%- include('./layout/header'); -%>
+	<main>
+		<section class="banner relative mt-10">
+			<picture class="banner-pic">
+				<source srcset="../assets/images/home-header-sm.png" media="(max-width: 576px)">
+				<img src="../assets/images/home-header.png" alt="home-header logo">
+			</picture>
+			<div class="container d-flex justify-end">
+				<div class="slogan absolute">
+					<p class="fz-6 fz-sm-2">Promise-Desert 2020 早春系列</p>
+					<h2 class="fz-8 fz-sm-4 fw-bold mb-0 mb-sm-1">看得清，才能看得遠</h2>
+					<div class="slogan-btn">
+						<a href="#" class="btn btn-s blow-up blow-up-m">立即購買</a>
+					</div>						
+				</div>
+			</div>
+		</section>
+		<section class="feature py-10 py-sm-5">
+			<div class="container">
+				<h3 class="fz-7 fz-sm-4 fw-bold text-primary-d text-center mb-3">用專業的心，做專業的事</h3>
+				<ul class="d-flex flex-wrap card-row">
+					<li class="column mb-md-3 mx-md-auto">
+						<div class="card d-flex flex-column align-items-center">
+							<img src="../assets/images/home-section2-1.png" alt="單一價格 logo" class="mb-2">
+							<h4 class="fz-4 fw-bold text-primary-d text-center mb-1">單一價格</h4>
+							<p>無論任何度數皆不需追加費用即可擁有適合自己的薄型球面鏡片。</p>
+						</div>							
+					</li>
+					<li class="column mb-md-3 mx-md-auto">
+						<div class="card d-flex flex-column align-items-center">
+							<img src="../assets/images/home-section2-2.png" alt="20 分鐘即可取件 logo" class="mb-2">
+							<h4 class="fz-4 fw-bold text-primary-d text-center mb-1">20 分鐘即可取件</h4>
+							<p>為了您的寶貴時間著想，以豐富專業知識與技術將結帳到交件的時間縮減至最快 20 分鐘即可完成。</p>
+						</div>
+					</li>
+					<li class="column mb-sm-3 mx-md-auto">
+						<div class="card d-flex flex-column align-items-center">
+							<img src="../assets/images/home-section2-3.png" alt="安心售後服務 logo" class="mb-2">
+							<h4 class="fz-4 fw-bold text-primary-d text-center mb-1">安心售後服務</h4>
+							<p>我們提供長達 120 天的保固售後服務，不限會員資格皆享有免費深層保養及專業維修服務。</p>
+						</div>
+					</li>
+					<li class="column mx-md-auto">
+						<div class="card d-flex flex-column align-items-center">
+							<img src="../assets/images/home-section2-4.png" alt="關於鏡片 logo" class="mb-2">
+							<h4 class="fz-4 fw-bold text-primary-d text-center mb-1">關於鏡片</h4>
+							<p>使用世界知名頂級品牌，抗UV、防汙鍍膜薄型非球面鏡片。</p>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</section>
+		<section class="classic py-10 py-sm-5">
+			<div class="container">
+				<h3 class="fz-7 fz-sm-4 fw-bold text-primary-d text-center mb-6 mb-sm-3" >經典系列鏡框</h3>
+				<ul class="d-flex flex-md-column card-row">
+					<li class="column mb-md-3 mx-md-auto">
+						<div class="card">
+							<img src="../assets/images/home-section3-1.png" alt="OPTICAL logo" class="mb-1">
+							<h4 class="fz-7 fw-bold text-primary text-center fs-italic">OPTICAL</h4>							
+						</div>							
+					</li>
+					<li class="column mb-md-3 mx-md-auto">
+						<div class="card">
+							<img src="../assets/images/home-section3-2.png" alt="SUNGLASSES logo" class="mb-1">
+							<h4 class="fz-7 fw-bold text-primary text-center fs-italic">SUNGLASSES</h4>							
+						</div>							
+					</li>
+					<li class="column mx-md-auto">
+						<div class="card">
+							<img src="../assets/images/home-section3-3.png" alt="FUNCTIONAL logo" class="mb-1">
+							<h4 class="fz-7 fw-bold text-primary text-center fs-italic">FUNCTIONAL</h4>							
+						</div>							
+					</li>
+				</ul>
+			</div>
+		</section>
+		<section class="design relative py-10 py-sm-5">
+			<picture>
+				<source srcset="../assets/images/index-bg-sm.png" media="(max-width: 576px)">
+				<source srcset="../assets/images/index-bg-md.png" media="(max-width: 992px)">
+				<img src="../assets/images/index-bg.png" alt="home-bg logo" class="design-pic absolute">
+			</picture>
+			<div class="container">
+				<div class="design-info">
+					<h3 class="fz-7 fz-sm-4 fw-bold text-white text-center mb-6 mb-sm-3" >聯名設計鏡框</h3>
+					<ul class="d-flex flex-md-column card-row">
+						<li class="column mb-md-3 mx-md-auto">
+							<div class="card">
+								<picture>
+									<source srcset="../assets/images/home-section4-1-sm.png" media="(max-width: 767px)">
+									<img src="../assets/images/home-section4-1.png" alt="DOUBLE A+ logo">
+								</picture>
+								<h4 class="fz-7 fw-bold text-primary text-center  bg-white py-1 fs-italic">DOUBLE A+</h4>							
+							</div>							
+						</li>
+						<li class="column mx-md-auto">
+							<div class="card">
+								<picture>
+									<source srcset="../assets/images/home-section4-2-sm.png" media="(max-width: 767px)">
+									<img src="../assets/images/home-section4-2.png" alt="YOUTH logo">
+								</picture>
+								<h4 class="fz-7 fw-bold text-primary text-center bg-white py-1 fs-italic">YOUTH</h4>							
+							</div>							
+						</li>							
+					</ul>
+				</div>					
+			</div>
+		</section>
+		<section class="recommender py-10 py-sm-5">
+			<div class="container">
+				<h3 class="fz-7 fz-sm-4 fw-bold text-primary-d text-center mb-6 mb-sm-3">顧客推薦</h3>
+				<ul class="d-flex flex-wrap card-row">
+					<li class="column mb-md-3 mx-md-auto">
+						<div class="card h-full d-flex flex-column">
+							<img src="../assets/images/home-section5-1.png" alt="Jessy logo">
+							<div class="py-2 px-2 d-flex flex-column h-full">
+								<h4 class="mb-1 fw-500">Jessy</h4>
+								<p class="mb-9">眼鏡品質優良，下次還會想來這邊購買！</p>
+								<p class="fz-1 text-gray-dark mt-auto">2021/06/20</p>
+							</div>
+						</div>							
+					</li>
+					<li class="column mb-md-3 mx-md-auto">
+						<div class="card h-full d-flex flex-column">
+							<img src="../assets/images/home-section5-2.png" alt="凱倫 logo">
+							<div class="py-2 px-2 d-flex flex-column h-full">
+								<h4 class="mb-1 fw-500">凱倫</h4>
+								<p class="mb-9">做工細緻、鏡架很輕盈，待久也不會覺得有負擔，推薦給大家！</p>
+								<p class="fz-1 text-gray-dark mt-auto">2021/04/18</p>
+							</div>
+						</div>
+					</li>
+					<li class="column mb-sm-3 mx-md-auto">
+						<div class="card h-full d-flex flex-column">
+							<img src="../assets/images/home-section5-3.png" alt="悠悠 logo">
+							<div class="py-2 px-2 d-flex flex-column h-full">
+								<h4 class="mb-1 fw-500">悠悠</h4>
+								<p class="mb-9">謝謝客服人員的詳細回答，成功買到了喜歡的眼鏡，下次會再回購！</p>
+								<p class="fz-1 text-gray-dark mt-auto">2020/12/25</p>
+							</div>
+						</div>
+					</li>
+					<li class="column mx-md-auto">
+						<div class="card h-full d-flex flex-column">
+							<img src="../assets/images/home-section5-4.png" alt="Kyuan logo">
+							<div class="py-2 px-2 d-flex flex-column h-full">
+								<h4 class="mb-1 fw-500">Kyuan</h4>
+								<p class="mb-9">服務很好，品質沒有任何問題，非常喜歡。</p>
+								<p class="fz-1 text-gray-dark mt-auto">2020/10/31</p>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</section>
+		<section class="contactUs py-10 py-sm-5">
+			<div class="container">
+				<h3 class="fz-7 fz-sm-4 fw-bold text-primary-d text-center mb-6 mb-md-3">聯絡我們</h3>
+				<div class="contactUs-info mx-auto">
+					<p class="fz-3 mb-3">我們相當重視您的意見，若您有任何疑問，可先參考「常見問題」，若仍有任何問題，請填妥以下資料，我們會在近期與您聯繫。</p>
+					<form action="index.html" method="post" class="form-info">
+						<div class="d-flex flex-column mb-2">
+							<label for="name">姓名</label>
+							<input type="text" name="name" id="name" placeholder="陳小明" class="fz-2">
+						</div>
+						 <div class="d-flex flex-column mb-2">
+							<label for="tel">聯絡電話</label>
+							<input type="tel" name="tel" id="tel" placeholder="0912-345-678" class="fz-2">
+						</div>
+						<div class="d-flex flex-column mb-2">
+							<label for="email">電子郵件</label>
+							<input type="email" name="email" id="email" placeholder="example@email.com" class="fz-2">
+						</div>
+						<div class="d-flex flex-column mb-2">
+							<label for="feedback">意見反應</label>
+							<textarea id="feedback" name="feedback" rows="4" cols="50" placeholder="請輸入您的意見" class="fz-2"></textarea>								
+						</div>
+						<div class="mb-6 mb-sm-3 d-flex align-items-center">
+							<input type="checkbox" name="agree" id="agree" class="me-1">
+							<label for="agree">我同意隱私權政策，並同意依隱私權政策中所述的方式處理自己的資料。</label>
+						</div>
+						<div class="button mx-auto">
+							<a  href="#" class="btn btn-l blow-up blow-up-m mx-auto">確認送出</a>
+						</div>							
+					</form>
+				</div>
+			</div>
+		</section>
+	</main>
+	<%- include('./layout/footer'); -%>
+	<script type="module" src="../main.js"></script>
+</body>
+
+</html>

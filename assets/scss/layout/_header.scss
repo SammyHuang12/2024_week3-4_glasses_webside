@@ -1,0 +1,75 @@
+body{
+  font-family: "Noto Sans TC","Roboto", sans-serif;
+  line-height:1.5;
+}
+
+.header{
+  	background: $primary-color;
+	z-index: 10;
+	top:0;
+	.logo{  
+		width: 80px;
+		height: 48px;
+		background-image: url('../images/logo-white.png');
+		background-repeat: no-repeat;
+		background-size: cover;
+		@include hide-text;
+		@include mobile(){		
+			margin-left: 12px;	
+		}
+	}
+
+	.nav{
+		color: $white;
+		margin-left: auto;
+		gap: $space-8;
+
+		a{
+			position: relative;			
+		}
+
+		a:after{
+			content: "";
+			position: absolute;
+			border-bottom:2px solid $white;
+			width:0;
+			transition: all .5s ease-out;
+			left: 0;
+			bottom: 0;
+		}
+
+		a:hover::after{
+			width: 100%;
+		}
+		@include mobile() {
+			width: 100%;
+			gap:unset;
+			a{
+				padding: 12px 0px;
+				&:hover{
+					background: $primary-dark;
+				}
+				&:hover::after{
+					width: 0;
+				}
+			}
+			&-item{
+				border: 1px solid $white;			
+				text-align: center;
+				width: 50%;
+				overflow: hidden;
+			}			
+		}		
+	}
+
+	@include mobile(){
+		.container{
+			padding: 0;
+		}
+	}			
+}
+
+.container{
+  	@include container;
+	// outline:1px solid greenyellow;
+}

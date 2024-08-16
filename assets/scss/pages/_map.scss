@@ -1,0 +1,85 @@
+.locationMap{
+	.city{
+		font-size: 18px;
+		padding: 6px 12px;
+		width: 304px;
+		border:1px solid $gray-400;	
+		
+		@include mobile(){
+			max-width: 276px;
+			width: 100%;	
+		}
+	}	
+	@include mobile(){
+		margin-top: 180px;		
+	}
+
+	.card-row{
+		margin: 0 -12px;
+	}
+
+	.column{
+		&:first-child {
+			width: calc(100% * 5 / 12);			
+			@include pad(){
+				width: 100%;
+			}			
+		}
+
+		&:last-child {
+			width: calc(100% * 7 / 12);
+			@include pad(){
+				width: 100%;
+			}
+		}
+
+		padding:0 12px;  //gutter,每個卡片的間距 
+
+			@include mobile(){ 
+			width: 100%;		
+		} 
+
+		.card{
+			// outline: 1px solid greenyellow;
+			height: 100%;  //使卡片一樣高 
+			
+			@include pad(){
+				width: calc(50% - 12px);
+
+				img{
+					height: 100%;
+
+					@include mobile(){
+						height: 100%;
+						min-height: 224px;
+					}
+				}
+			}
+		
+			@include mobile(){
+				width: 100%;
+			}
+
+			&:last-child{				
+				.store{
+					border-bottom: 1px solid $black-light; 
+				}
+
+				border: 1px solid $black-light;
+			} 
+			 		
+		}
+	}
+
+	.map{
+		width: 100%;
+		@include pad(){
+			min-height: 414px;
+		}
+
+		@include mobile(){
+			min-height: 208px;
+		}
+	}
+
+} 
